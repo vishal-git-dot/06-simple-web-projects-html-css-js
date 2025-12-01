@@ -84,37 +84,20 @@ cd SlideX Carousel
 
 ## 📚 Project Series Overview
 
-  ------------------------------------------------------------------------
-  \#   Project Name        Skills                 Features
-  ---- ------------------- ---------------------- ------------------------
-  ✅01   To-Do List App      DOM, localStorage      Add/edit/delete tasks
+| #     | Project Name              | Skills                       | Features                        |
+| ----- | ------------------------- | ---------------------------- | ------------------------------- |
+| ✅ 01  | To-Do List App            | DOM, localStorage            | Add/edit/delete tasks           |
+| ✅ 02 | Calculator                | Logic, CSS grid              | Basic arithmetic                |
+| ✅ 03 | Weather App               | Fetch API, async/await       | City search, weather info       |
+| ✅ 04 | Digital Clock             | Time API, intervals          | Live time, dark/light modes     |
+| ✅ 05  | Quiz App — BrightQuiz | Events, arrays, conditionals | MCQs, timer, score, review mode |
+| ⭐ 06 | **Image Slider**              | CSS transitions, JS controls | Auto-slide, navigation          |
+| 🔜 07 | Portfolio Website         | Layout, responsiveness       | About, Projects, Contact        |
+| 🔜 08 | Typing Speed Test         | Timers, string logic         | WPM, accuracy tracking          |
+| 🔜 09 | Notes App                 | localStorage                 | Add/delete notes                |
+| 🔜 10 | Rock, Paper, Scissors     | Conditionals, randomness     | Play vs computer                |
 
-  ✅02   Calculator          Logic, CSS grid        Basic arithmetic
-
-  ✅03   Weather App         Fetch API, async/await City search, weather
-                                                  info
-
-  ✅04   Digital Clock       Time API, intervals    Live time, dark/light
-                                                  modes
-
-  ✅05   BrightQuiz          Events, arrays,        MCQs, timer, score,
-                           conditionals           review mode
-
-  ⭐   **Image Slider ---  CSS transitions, JS    Auto-slide, navigation,
-  06   SlideX**            events                 swipe
-
-  🔜07   Portfolio Website   Layout, responsiveness About, Projects, Contact
-
-  🔜08   Typing Speed Test   Timers, string logic   WPM, accuracy tracking
-
-  🔜09   Notes App           localStorage           Add/delete notes
-
-  🔜10   Rock, Paper,        Conditionals,          Play vs computer
-       Scissors            randomness             
-  ------------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
+---
 ## 🛠️ Built With
 
 -   **HTML5** --- structure and markup\

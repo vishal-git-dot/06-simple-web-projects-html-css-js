@@ -1,0 +1,106 @@
+/* Basic reset */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Carousel layout */
+.carousel-wrap { width: 100%; max-width: 900px; }
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #222;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Slides container — horizontal row */
+.slides {
+  display: flex;
+  transition: transform 600ms cubic-bezier(.2,.9,.2,1);
+  will-change: transform;
+}
+
+/* Each slide */
+.slide {
+  min-width: 100%;
+  position: relative;
+  user-select: none;
+  pointer-events: none; /* controls will be separate */
+}
+.slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* vertical-align: middle; */
+}
+
+/* Caption */
+.caption {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: rgba(0,0,0,0.45);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  pointer-events: auto;
+}
+
+/* Nav buttons */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 6;
+  border: none;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 160ms;
+  user-select: none;
+}
+.nav:hover { background: rgba(0,0,0,0.6); }
+.prev { left: 12px; }
+.next { right: 12px; }
+
+/* Indicators */
+.indicators {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 7;
+}
+.indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255,255,255,0.35);
+  cursor: pointer;
+  transition: transform 120ms, background 120ms;
+}
+.indicators button[aria-selected="true"] {
+  background: rgba(255,255,255,0.95);
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .caption { font-size: 12px; padding: 6px 8px; }
+  .nav { padding: 8px 10px; font-size: 16px; }
+}

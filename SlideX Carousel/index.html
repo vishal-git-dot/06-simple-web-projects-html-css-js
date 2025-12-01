@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Image Carousel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="carousel-wrap">
+    <div class="carousel" id="carousel" aria-roledescription="carousel">
+      <div class="slides" id="slides">
+        <!-- Each .slide: put your own images or URLs -->
+        <div class="slide" data-index="0" aria-hidden="false">
+          <img src="https://picsum.photos/id/1015/1200/600" alt="Mountain scene" />
+          <div class="caption">Mountain scene</div>
+        </div>
+        <div class="slide" data-index="1" aria-hidden="true">
+          <img src="https://picsum.photos/id/1016/1200/600" alt="Coastline" />
+          <div class="caption">Coastline</div>
+        </div>
+        <div class="slide" data-index="2" aria-hidden="true">
+          <img src="https://picsum.photos/id/1025/1200/600" alt="Dog portrait" />
+          <div class="caption">Dog portrait</div>
+        </div>
+      </div>
+
+      <button class="nav prev" id="prev" aria-label="Previous slide">&lt;</button>
+      <button class="nav next" id="next" aria-label="Next slide">&gt;</button>
+
+      <div class="indicators" id="indicators" role="tablist" aria-label="Slide indicators">
+        <!-- JS will populate / update buttons -->
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
